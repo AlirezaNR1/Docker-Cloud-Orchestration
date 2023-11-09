@@ -71,6 +71,15 @@ docker run --network=DockerNetwork -p 8080:8080 -v database-PATH /shared nginx-c
 
 ### Note
 
+
+### results
+
+- java output
 ![java output](https://github.com/AlirezaNR1/Docker-Cloud-Orchestration/assets/141549257/5d3bff00-a8cb-40b4-bbf7-7daf5f5cc92c)
+-python output
+
+-js output
+
+-nginx output
 
 Feel free to reach out if you encounter any issues or have further questions! Happy coding!

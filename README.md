@@ -69,9 +69,6 @@ docker run --network=DockerNetwork -p 8080:8080 -v database-PATH /shared nginx-c
     - Host a static HTML page.
     - Host contents of an external directory for download.
 
-### Note
-
-
 ## results
 
 ### java output

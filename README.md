@@ -36,16 +36,15 @@ After creating the Docker files, follow these general steps to run the container
 
 ```bash
 # Build Docker images
-docker build -t java-pong-ping -f Dockerfile.java .
-docker build -t python-pong-ping -f Dockerfile.python .
-docker build -t js-pong-ping -f Dockerfile.js .
-docker build -t nginx-reverse-proxy -f Dockerfile.nginx .
+docker build -t ping-pong-java .
+docker build -t ping-pong-python .
+docker build -t ping-pong-js .
 
 # Run Docker containers
-docker run -d -p 8001:8001 java-pong-ping
-docker run -d -p 8002:8002 python-pong-ping
+docker run --network=DockerNetwork -p 8001:8001 java-pong-ping
+docker run --network=DockerNetwork --alias=pythonapp -p 8002:8002 ping-pong-python
 docker run -d -p 8003:8003 js-pong-ping
-docker run -d -p 80:80 nginx-reverse-proxy
+docker run --network=DockerNetwork -p 8080:8080 -v database-PATH /shared nginx-config
 ```
 
 ### Application Endpoints

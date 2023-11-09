@@ -47,3 +47,29 @@ docker run -d -p 8002:8002 python-pong-ping
 docker run -d -p 8003:8003 js-pong-ping
 docker run -d -p 80:80 nginx-reverse-proxy
 ```
+
+### Application Endpoints
+
+1.**Java Pong Ping:**
+    - /ping (GET): Receive "pong" as a response
+    - URL: http://localhost:8001/ping
+
+2.**Python Pong Ping:**
+    - /ping (GET): Receive "pong" as a response
+    - /echo (POST): Receive "text" as a response (Payload: {"echo": "text"})
+    - URL: http://localhost:8002/ping and http://localhost:8002/echo
+
+**JS Pong Ping:**
+    - /ping (GET): Receive "pong" as a response
+    - URL: http://localhost:8003/ping
+
+### Nginx Configuration
+
+- Nginx is configured to fulfill the following responsibilities:
+    - act as a reverse proxy
+    - Host a static HTML page.
+    - Host contents of an external directory for download.
+
+### Note
+
+Feel free to reach out if you encounter any issues or have further questions! Happy coding!

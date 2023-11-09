@@ -10,23 +10,23 @@ Follow the steps below to set up and run the ping-pong applications in container
 
 Four Docker files need to be created:
 
-java-pong-ping
+1.java-pong-ping
     - Endpoint: /ping
     - Method: GET
     - Port: 8001
 
-python-pong-ping
+1.python-pong-ping
     - Endpoints:
         /ping (Method: GET)
         /echo (Method: POST, Payload: {"echo": "text"})
     - Port: 8002
 
-js-pong-ping
+1.js-pong-ping
     - Endpoint: /ping
     - Method: GET
     - Port: 8003
 
-nginx
+1.nginx
     Responsibilities:
         - Act as a reverse proxy for the applications
         - Host a static HTML page

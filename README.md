@@ -50,16 +50,16 @@ docker run -d -p 80:80 nginx-reverse-proxy
 
 ### Application Endpoints
 
-1.**Java Pong Ping**
+1. **Java Pong Ping**
     - /ping (GET): Receive "pong" as a response
     - URL: http://localhost:8001/ping
 
-2.**Python Pong Ping**
+2. **Python Pong Ping**
     - /ping (GET): Receive "pong" as a response
     - /echo (POST): Receive "text" as a response (Payload: {"echo": "text"})
     - URL: http://localhost:8002/ping and http://localhost:8002/echo
 
-3.**JS Pong Ping**
+3. **JS Pong Ping**
     - /ping (GET): Receive "pong" as a response
     - URL: http://localhost:8003/ping
 

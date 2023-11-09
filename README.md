@@ -104,6 +104,6 @@ docker run --network=DockerNetwork -p 8080:8080 -v database-PATH /shared nginx-c
 
 **hosting HTML page:**
 
-![nginx host](https://github.com/AlirezaNR1/Docker-Cloud-Orchestration/assets/141549257/0f1bf938-a8e9-422f-bec5-137efb0cb771)
+![nginx host](https://github.com/AlirezaNR1/Docker-Cloud-Orchestration/assets/141549257/3cfb3ce5-6f20-407d-b111-8ccee9a4399f)
 
 Feel free to reach out if you encounter any issues or have further questions! Happy coding!
